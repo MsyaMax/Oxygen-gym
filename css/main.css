@@ -1,0 +1,390 @@
+body {
+    font-family: sans-serif !important;
+}
+
+
+/* utiliti  */
+
+.lh1 {
+    line-height: 30px !important;
+}
+
+.lh2 {
+    line-height: 35px !important;
+}
+
+.lh3 {
+    line-height: 40px !important;
+}
+
+.underline {
+    width: 150px;
+    border: 3px solid#fff;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.underline-dark {
+    border: 3px solid#888;
+}
+
+
+/* end of utiliti  */
+
+
+/* header  -----------------------------------------------*/
+
+
+/* navbar */
+
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    transition: .7s;
+}
+
+.menu-item {
+    font-size: 17px;
+    color: #eee !important;
+    transition: color .5s;
+}
+
+.menu-item:hover {
+    color: #70aed2 !important;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+    padding: 5px 30px !important;
+}
+
+
+/* end of navbar */
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* banner */
+
+.banner {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-family: Impact;
+}
+
+.banner-heading {
+    animation: anim 2s ease backwards;
+}
+
+.banner-par {
+    animation: anim 2s ease 0.2s backwards;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translate(-120px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+/* end of banner */
+
+
+/* end of header ---------------------------------------------------- */
+
+
+/* main  -------------------------------------------------------------*/
+
+
+/* awards */
+
+.awards {
+    background-color: #151f20;
+}
+
+.fromLeft {
+    animation: fromLeft 3s ease backwards;
+}
+
+.fromRight {
+    animation: fromRight 3s ease backwards;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/* end of awards */
+
+
+/* <!-- services --> */
+
+.card-shadow {
+    box-shadow: 5px 8px 20px #444;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card-shadow:hover {
+    box-shadow: 3px 10px 30px #333;
+    transform: translateY(-8px);
+}
+
+.heading-card {
+    cursor: pointer;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    width: 60%;
+    background-color: #2980b9;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.heading-card:hover {
+    opacity: 1;
+}
+
+
+/* <!-- end of services --> */
+
+
+/* <!-- gallery --> */
+
+.active-item {
+    color: #2980b9;
+}
+
+.gallery-list-item {
+    user-select: none;
+    cursor: pointer;
+}
+
+
+/* <!-- end of gallery --> */
+
+
+/* <!-- trainers --> */
+
+.trainer {
+    background-color: #151f20;
+}
+
+
+/* <!-- end of trainers --> */
+
+
+/* plans */
+
+.card1,
+.card2,
+.card3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../img/membership.jpg");
+    background-size: cover;
+    box-shadow: 7px 8px 50px #555;
+    max-width: 370px !important;
+}
+
+.card1MoveFromRight {
+    animation: card1MoveFromRight 3s ease;
+}
+
+.card2MoveFromLeft {
+    animation: card2MoveFromLeft 3s ease;
+}
+
+.card3MoveFromBottom {
+    animation: card3MoveFromBottom 3s ease;
+}
+
+.card-list-item {
+    margin: auto;
+    border-bottom: 1px groove #eee;
+    width: 55%;
+}
+
+.card-membership-button {
+    width: 130px;
+    background-color: #2980b9 !important;
+    box-shadow: 5px 8px 18px #000;
+    border-radius: 25px !important;
+    transition: 0.4s !important;
+}
+
+.card-membership-button:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+@keyframes card1MoveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes card2MoveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes card3MoveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* end of plans */
+
+
+/* contact  */
+
+.contact {
+    background: linear-gradient(105deg, rgba(21, 31, 32, 0.8), rgba(21, 31, 32, 0.9)50%, transparent 50%), url("../img/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.input {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    transition: 0.8s;
+    border-bottom: 2px solid #ccc !important;
+}
+
+.input:focus {
+    box-shadow: none !important;
+    border-bottom: 2px solid #f5593d !important;
+}
+
+.submit-button {
+    background-color: #2980b9 !important;
+    color: #fff !important;
+    transition: 0.1s !important;
+}
+
+.submit-button:hover {
+    background-color: #3498db !important;
+    transform: translateY(-2px);
+}
+
+.contact-label {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    opacity: 1;
+    visibility: visible;
+    top: -2%;
+    position: absolute;
+}
+
+input:placeholder-shown+.contact-label {
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+}
+
+@media screen and ( max-width :992px) {
+    .contact {
+        background: linear-gradient(105deg, rgba(21, 31, 32, 0.8), rgba(21, 31, 32, 0.9)50%);
+    }
+    .contact-form {
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+
+/* end of contact */
+
+
+/* end of main -------------------------------------------------------------------- */
+
+
+/* footer */
+
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #70aed2;
+    text-decoration: none;
+}
+
+
+/* end of footer */
